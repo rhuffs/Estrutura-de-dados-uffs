@@ -1,0 +1,1 @@
+para fzer a comparacao entre strings é o strcpy da biblioteca string.h
