@@ -17,6 +17,3 @@ int main(){
     det = calculaDeterminate(matriz);
     printf("O determinate da matriz é : %d \n ", det);
 }
-
-
-s
