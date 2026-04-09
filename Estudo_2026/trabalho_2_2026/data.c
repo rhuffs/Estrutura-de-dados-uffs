@@ -82,7 +82,7 @@ int getDaysBeforeMonth(data d1){
 
 }
 
-int getDaysFromYear(data d1){
+int getDayFromYear(data d1){
     int diasDoAno;
     diasDoAno = getDaysBeforeMonth(d1) + d1.dia;
     return diasDoAno;
@@ -116,8 +116,8 @@ int getDiff(data d1, data d2){
         }
     }
 
-    totald1 = diasPorAnod1 + getDaysFromYear(d1);
-    totald2 = diasPorAnod2 + getDaysFromYear(d2);
+    totald1 = diasPorAnod1 + getDayFromYear(d1);
+    totald2 = diasPorAnod2 + getDayFromYear(d2);
 
     if(dataComp(d1,d2) == 1 ) return totald1 - totald2;
     if(dataComp(d1,d2) == -1 ) return totald2 - totald1;
