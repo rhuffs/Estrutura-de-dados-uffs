@@ -1,4 +1,4 @@
-module registrador_16(
+module shift_reg_16(
     input wire clk,
     input wire rst_n,
     input wire [1:0] mode,
@@ -8,7 +8,7 @@ module registrador_16(
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) begin
-        q = 16'h000;
+        q <= 16'h000;
     end
     else begin
         case (mode)
